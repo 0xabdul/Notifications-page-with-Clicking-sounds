@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+:root{
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+--White: hsl(0, 0%, 100%);
+--Verylightgrayishblue:hsl(210, 60%, 98%);
+--Lightgrayishblue :hsl(211, 68%, 94%);
+--Lightgrayishblue :hsl(205, 33%, 90%);
+--Grayishblue: hsl(219, 14%, 63%);
+--Darkgrayishblue:hsl(219, 12%, 42%);
+--Verydarkblue:hsl(224, 21%, 14%);
+}
+#number{
+    font-size:0.8rem;
+    height:1rem;
+    width:1rem;
+    padding:0.3rem;
+    text-align: center;
+    background-color: var(--Blue);
+    color:var(--White);
+    border-radius:50%;
+    font-weight:800;
+}
+#mark{
+color:var(--Verydarkblue);
+font-weight:300;
+font-size:1rem;
+}
+h1{
+    display: flex;
+    justify-content:space-around;
+    font-size:1.1rem;
+}
+#userone-content,#usertwo-content,#userthree-content,#userfour-content,#userfive-content,#usersix-content,#userseven-content{
+    display: flex;
+    gap:1rem;
+}
+#user-five{
+    gap:5rem;
+}
+.one{
+    font-weight:700;
+    color:black;
+}
+p{
+    color:var(--Darkgrayishblue)
+}
+#dotone,#dottwo,#dotthree{
+    color:var(--Red);
+}
+#usersix-content{
+    width:38rem;
+}
+#userone-content img{
+  height:3rem;
+}
+#usertwo-content img{
+  height:3rem;
+}
+#userthree-content img{
+    height:3rem;
+}
+#userfour-content img{
+    height:3rem;
+}
+#userfive-content img{
+    height:3rem;
+}
+#usersix-content img{
+    height:3rem;
+}
+#userseven-content img{
+    height:3rem;
+}
+#userfour-msg p{
+    width:32rem;
+    border-style:solid;
+    border-width:1px;
+    border-radius:4px;
+    padding:0.8rem;
+    position: relative;
+    left:4rem;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    box-shadow: 0px 0px 45px 0px var(--Lightgrayishblue);
+    padding:2rem;
+    border-radius:1rem;
+    width:38rem;
+    background-color:var(--White);
+}
+body{
+    background-color:var(--Verylightgrayishblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+@media (max-width:710px) {
+    #container{
+        width:90vw;
+    }
+    #userfour-msg p{
+        width:55vw;
+    }
+    #usersix-content{
+        width:80vw;
+    }
+    body{
+        padding-top:15rem;
+        padding-bottom:2rem;
+    }
+}
+@media (max-width:480px) {
+    #userone-content img{
+        height:2rem;
+      }
+      #usertwo-content img{
+        height:2rem;
+      }
+      #userthree-content img{
+          height:2rem;
+      }
+      #userfour-content img{
+          height:2rem;
+      }
+      #userfive-content img{
+          height:2rem;
+      }
+      #usersix-content img{
+          height:2rem;
+      }
+      #userseven-content img{
+          height:2rem;
+      }
+      #userone-content,#usertwo-content,#userthree-content,#userfour-content,#userfive-content,#usersix-content,#userseven-content{
+       font-size:0.9rem;
+    }
+    body{
+        padding-top:12rem;
+        padding-bottom:1px;
+    }
+    #userfour-msg p{
+       font-size:0.9rem;
+    }
+}
